@@ -15,8 +15,13 @@ The python script and Jupyter Notebook perform the following steps:
 
 ### Hidden Markov Model (HMM)
 The HMM model assumes the market transitions between hidden states (e.g., bull, bear, stagnant) and outputs observed prices.
--   **Directional Accuracy**: The HMM model achieved a directional accuracy of **72.73%** in predicting price movements over a window of 22 trading days.
+-   **Directional Accuracy**: The HMM model achieved a directional accuracy of **54.55%** in predicting price movements over a window of 22 trading days.
 -   **Forecast Plot**: The notebook outputs a visualization of the **S&P 500 HMM Forecast**, which includes a **$1\sigma$ Uncertainty** representing the confidence interval of the predictions and **Residuals** plot to visualize the prediction error over time.
+
+### ARIMA Model
+The ARIMA model assumes a linear relationship between price at given intervals and outputs observed prices.
+-   **Directional Accuracy**: The ARIMA model achieved a directional accuracy of **77.27%** in predicting price movements over a window of 22 trading days.
+-   **Forecast Plot**: The notebook outputs a visualization of the **S&P 500 ARIMA Forecast**, which includes a **$1\sigma$ Uncertainty** representing the confidence interval of the predictions and **Residuals** plot to visualize the prediction error over time.
 
 ## Dependencies
 -   `numpy`
